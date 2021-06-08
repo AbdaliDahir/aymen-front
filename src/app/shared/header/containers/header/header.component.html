@@ -1,0 +1,12 @@
+<mat-toolbar class="header">
+
+  <div class="header__title">
+    <h6 class="header__title-text">Data logger</h6>
+    <button mat-button [routerLink]="['/dashboard']" routerLinkActive="router-link-active" > <mat-icon class="nav-menu-icon">stream</mat-icon> log parser </button>
+  </div>
+
+  <div class="header-toolbar">
+    <app-user [user]="user$ | async" (signOut)="signOut()"></app-user>
+  </div>
+
+</mat-toolbar>

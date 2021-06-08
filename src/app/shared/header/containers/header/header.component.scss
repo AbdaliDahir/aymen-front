@@ -1,0 +1,47 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/font';
+@import 'src/app/styles/variables';
+
+.header {
+  background-color: $header-background-color;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  height: $header-height;
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title-text {
+    color: $header-background-color;
+    margin-left: 60px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: $header-title-font-color;
+
+    @media (max-width: $small) {
+      display: none;
+    }
+  }
+  button {
+    margin: auto 10px;
+    font-weight: $fw-normal;
+    color: #fff;
+    text-transform: capitalize;
+    .nav-menu-icon {
+      font-size: 20px;
+      margin: 0px;
+      vertical-align: middle;
+      padding: 0px;
+    }
+  }
+}
+
+.header-toolbar {
+  display: flex;
+  align-items: center;
+}
